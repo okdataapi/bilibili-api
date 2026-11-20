@@ -10,15 +10,15 @@
 
 | 接口 | 说明 | 价格 | 路径 |
 |---|---|---|---|
-| [B站视频搜索](https://okdata.online/zh/apis/bilibili/videos/search/) | 按关键词搜视频，带播放、弹幕、点赞和投币。 | $0.002 / 次 | `GET /v1/bilibili/videos/search` |
-| [B站视频详情](https://okdata.online/zh/apis/bilibili/videos/get/) | 按 BV 号或链接取一个视频。 | $0.002 / 次 | `GET /v1/bilibili/videos/get` |
-| [B站视频评论](https://okdata.online/zh/apis/bilibili/videos/comments/list/) | 视频评论，按最热或最新。 | $0.002 / 次 | `GET /v1/bilibili/videos/comments/list` |
-| [B站热搜榜](https://okdata.online/zh/apis/bilibili/trends/list/) | B站当前的热搜词，最多 50 个，带名次和热度。 | $0.002 / 次 | `GET /v1/bilibili/trends/list` |
-| [B站用户资料](https://okdata.online/zh/apis/bilibili/users/get/) | 按用户 ID 取 B 站账号：昵称、签名、头像、认证和认证说明、粉丝、关注、投稿视频数、累计获赞、等级和直播间链接。 | $0.002 / 次 | `GET /v1/bilibili/users/get` |
-| [B站用户投稿](https://okdata.online/zh/apis/bilibili/users/videos/list/) | 账号投稿的视频，从新到旧，每页 30 条：标题、简介、播放、评论、弹幕、时长和发布时间。 | $0.002 / 次 | `GET /v1/bilibili/users/videos/list` |
-| [B站评论回复](https://okdata.online/zh/apis/bilibili/comments/replies/list/) | 按评论 ID 和所在视频的 BV 号取回复：内容、回复者、点赞、回复的是哪一条（parent_id）、发布时间和 IP 属地。 | $0.002 / 次 | `GET /v1/bilibili/comments/replies/list` |
-| [B站综合热门](https://okdata.online/zh/apis/bilibili/videos/trending/) | B站综合热门视频，每页 20 条：标题、简介、UP 主、播放、点赞、投币、收藏、弹幕、时长、分区、IP 属地和推荐理由。 | $0.002 / 次 | `GET /v1/bilibili/videos/trending` |
-| [B站用户投稿（备用版）](https://okdata.online/zh/apis/bilibili/backup/users/videos/list/) | B站用户投稿（bilibili.users.videos.list）的备用版，原接口取不到时改调：账号投稿的视频，从新到旧，每页 20 条（这条数据通道每页就是 20 条），价格略高。标题、封面、播放、弹幕、时长和发布时间；没有简介、点赞和评论数。用户不存在时和没有投稿一样，返回空结果，不报 404。 | $0.0025 / 次 | `GET /v1/bilibili/backup/users/videos/list` |
+| [B站视频搜索](https://okdata.online/zh/apis/bilibili/videos/search/?src=gh-bilibili-api) | 按关键词搜视频，带播放、弹幕、点赞和投币。 | $0.002 / 次 | `GET /v1/bilibili/videos/search` |
+| [B站视频详情](https://okdata.online/zh/apis/bilibili/videos/get/?src=gh-bilibili-api) | 按 BV 号或链接取一个视频。 | $0.002 / 次 | `GET /v1/bilibili/videos/get` |
+| [B站视频评论](https://okdata.online/zh/apis/bilibili/videos/comments/list/?src=gh-bilibili-api) | 视频评论，按最热或最新。 | $0.002 / 次 | `GET /v1/bilibili/videos/comments/list` |
+| [B站热搜榜](https://okdata.online/zh/apis/bilibili/trends/list/?src=gh-bilibili-api) | B站当前的热搜词，最多 50 个，带名次和热度。 | $0.002 / 次 | `GET /v1/bilibili/trends/list` |
+| [B站用户资料](https://okdata.online/zh/apis/bilibili/users/get/?src=gh-bilibili-api) | 按用户 ID 取 B 站账号：昵称、签名、头像、认证和认证说明、粉丝、关注、投稿视频数、累计获赞、等级和直播间链接。 | $0.002 / 次 | `GET /v1/bilibili/users/get` |
+| [B站用户投稿](https://okdata.online/zh/apis/bilibili/users/videos/list/?src=gh-bilibili-api) | 账号投稿的视频，从新到旧，每页 30 条：标题、简介、播放、评论、弹幕、时长和发布时间。 | $0.002 / 次 | `GET /v1/bilibili/users/videos/list` |
+| [B站评论回复](https://okdata.online/zh/apis/bilibili/comments/replies/list/?src=gh-bilibili-api) | 按评论 ID 和所在视频的 BV 号取回复：内容、回复者、点赞、回复的是哪一条（parent_id）、发布时间和 IP 属地。 | $0.002 / 次 | `GET /v1/bilibili/comments/replies/list` |
+| [B站综合热门](https://okdata.online/zh/apis/bilibili/videos/trending/?src=gh-bilibili-api) | B站综合热门视频，每页 20 条：标题、简介、UP 主、播放、点赞、投币、收藏、弹幕、时长、分区、IP 属地和推荐理由。 | $0.002 / 次 | `GET /v1/bilibili/videos/trending` |
+| [B站用户投稿（备用版）](https://okdata.online/zh/apis/bilibili/backup/users/videos/list/?src=gh-bilibili-api) | B站用户投稿（bilibili.users.videos.list）的备用版，原接口取不到时改调：账号投稿的视频，从新到旧，每页 20 条（这条数据通道每页就是 20 条），价格略高。标题、封面、播放、弹幕、时长和发布时间；没有简介、点赞和评论数。用户不存在时和没有投稿一样，返回空结果，不报 404。 | $0.0025 / 次 | `GET /v1/bilibili/backup/users/videos/list` |
 
 ## 快速开始
 
@@ -65,17 +65,17 @@ Cursor、Cherry Studio、WorkBuddy 等支持远程 MCP 的客户端：
 
 **要登录平台账号吗？** 不用。数据是公开内容，okdata 在服务端获取，你的账号完全不参与。
 
-**怎么收费？** 每个接口单独定价，表里写的就是一次调用的价格；按条计费的接口按实际返回条数算。新账号送 $0.1 试用额度，之后 $10 起充，余额不过期，没有订阅。价格页：https://okdata.online/zh/pricing/ ，计费说明：https://okdata.online/zh/docs/billing/
+**怎么收费？** 每个接口单独定价，表里写的就是一次调用的价格；按条计费的接口按实际返回条数算。新账号送 $0.1 试用额度，之后 $10 起充，余额不过期，没有订阅。价格页：https://okdata.online/zh/pricing/?src=gh-bilibili-api ，计费说明：https://okdata.online/zh/docs/billing/?src=gh-bilibili-api
 
 **和官方开放平台有什么区别？** 官方开放平台只能读授权给你的账号自己的数据，而且要企业资质和审核；这里是平台上任何人都能看到的公开数据，比如搜索结果、别人的笔记或视频、评论、热榜。
 
 **能翻页吗？** 列表接口每页一次调用，把 `page.next_cursor` 原样传回 `cursor` 就是下一页，24 小时内有效。
 
-**出错了怎么办？** 每个错误都有固定的 `code`、中文说明 `message_zh`，以及会不会扣费（`charged`）和要不要重试（`retry`）。全部错误码：https://okdata.online/zh/docs/errors/
+**出错了怎么办？** 每个错误都有固定的 `code`、中文说明 `message_zh`，以及会不会扣费（`charged`）和要不要重试（`retry`）。全部错误码：https://okdata.online/zh/docs/errors/?src=gh-bilibili-api
 
 ## English
 
-Examples for the okdata Bilibili API: 9 live endpoints behind one API key, pay per call from $0.002, no platform login or cookies. Sign up at https://okdata.online/signup/?src=gh-bilibili-api, docs at https://okdata.online/apis/, MCP at https://okdata.online/mcp/.
+Examples for the okdata Bilibili API: 9 live endpoints behind one API key, pay per call from $0.002, no platform login or cookies. Sign up at https://okdata.online/signup/?src=gh-bilibili-api, docs at https://okdata.online/apis/?src=gh-bilibili-api, MCP at https://okdata.online/mcp/?src=gh-bilibili-api.
 
 ## License
 
